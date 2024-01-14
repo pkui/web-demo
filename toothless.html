@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toothless</title>
+    <style>
+        #dino {
+            position: fixed;
+            width: 10rem;
+        }
+        button {
+            width: 100%;
+            display: block;
+            margin: -0.25rem;
+            padding: 0;
+            border: 0;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="dino">
+        <button onclick="alert('Dảk Dảk Bủh Bủh Lờ mao')"><img src="./toothless-head.png"></button>
+        <button onmouseover="move()"><img src="./toothless-foot.png"></button>
+    </div>
+
+    <script>
+        function move() {
+            var dino = document.getElementById('dino')
+            dino.style.left = Math.random()*90 + '%'
+            dino.style.top = Math.random()*90 + '%'
+        }
+    </script>
+</body>
+</html>
